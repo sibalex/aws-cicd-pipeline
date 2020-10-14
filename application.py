@@ -8,7 +8,7 @@ def root():
 
 @application.route("/help")
 def helppage():
-    return render_template("test.html")
+    return render_template("help.html")
 
 @application.route("/hello")
 def index():
@@ -16,6 +16,5 @@ def index():
 
 
 if __name__ == "__main__":
-    application.debug = True
-    application.run()
+    application.run(debug=True)
     
