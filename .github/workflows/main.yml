@@ -1,3 +1,8 @@
+# -------------------------------------------
+# GitHub Actions Part: Test-2
+# 
+# Copyleft (c) by Alexander Sibagatov 2020.
+# -------------------------------------------
 name: CICD-AWS-pipeline-s3-elasticbeanstalk
 env:
   EB_PACKAGE_S3_BUCKET_NAME : "sibalex-flask-application-packages"
@@ -29,11 +34,11 @@ jobs:
         aws-secret-access-key:  ${{ secrets.MY_AWS_SECRET_KEY }}
         aws-region           :  ${{ env.AWS_REGION_NAME }}
 
-    - name: Copy Deployment package to S3 bucket
-      run : aws s3 cp ${{ env.DEPLOY_PACKAGE_NAME }}  s3://${{ env.EB_PACKAGE_S3_BUCKET_NAME }}/
+#     - name: Copy Deployment package to S3 bucket
+#       run : aws s3 cp ${{ env.DEPLOY_PACKAGE_NAME }}  s3://${{ env.EB_PACKAGE_S3_BUCKET_NAME }}/
     
-    - name: Print Message for CI finish
-      run : echo "CI Pipeline part Finished successfully"
+#     - name: Print Message for CI finish
+#       run : echo "CI Pipeline part Finished successfully"
 
 
 #   my_cd_part:
