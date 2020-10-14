@@ -5,7 +5,7 @@
 # -------------------------------------------
 name: CI-CD-AWS-S3-ElasticBeanstalk-Pipeline
 env:
-  EB_PACKAGE_S3_BUCKET_NAME : "sibalex-flask-application-packages"
+  EB_PACKAGE_S3_BUCKET_NAME : "elasticbeanstalk-us-west-2-015536912792"
   EB_APPLICATION_NAME       : "MyFlask"
   EB_ENVIRONMENT_NAME       : "Myflask-env"
   DEPLOY_PACKAGE_NAME       : "flask_app_${{ github.sha }}.zip"
@@ -65,39 +65,4 @@ jobs:
       
     - name: Print Happy Message for CD finish
       run : echo "CD Pipeline part Finished successfully"
-
-
-# -----------------------------------------------------------------------------
-# # This is a basic workflow to help you get started with Actions
-
-# name: CI
-
-# # Controls when the action will run. Triggers the workflow on push or pull request
-# # events but only for the main branch
-# on:
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
-
-# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-# jobs:
-#   # This workflow contains a single job called "build"
-#   build:
-#     # The type of runner that the job will run on
-#     runs-on: ubuntu-latest
-
-#     # Steps represent a sequence of tasks that will be executed as part of the job
-#     steps:
-#       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v2
-
-#       # Runs a single command using the runners shell
-#       - name: Run a one-line script
-#         run: echo Hello, world!
-
-#       # Runs a set of commands using the runners shell
-#       - name: Run a multi-line script
-#         run: |
-#           echo Add other actions to build,
-#           echo test, and deploy your project.
+      
