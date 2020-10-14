@@ -1,6 +1,6 @@
 name: CICD-AWS-pipeline-s3-elasticbeanstalk
 env:
-  EB_PACKAGE_S3_BUCKET_NAME : "elasticbeanstalk-us-west-2-015536912792"
+  EB_PACKAGE_S3_BUCKET_NAME : "sibalex-flask-application-packages"
   EB_APPLICATION_NAME       : "MyFlask"
   EB_ENVIRONMENT_NAME       : "Myflask-env"
   DEPLOY_PACKAGE_NAME       : "flask_app_${{ github.sha }}.zip"
