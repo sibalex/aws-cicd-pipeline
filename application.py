@@ -16,6 +16,4 @@ def index():
 
 
 if __name__ == "__main__":
-    application.debug = False
-    application.run()
-    
+    application.run(debug = True)
