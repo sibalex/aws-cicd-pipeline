@@ -8,7 +8,7 @@ def root():
 
 @application.route("/help")
 def helppage():
-    return render_template("help.html")
+    return render_template("test.html")
 
 @application.route("/hello")
 def index():
