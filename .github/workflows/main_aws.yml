@@ -3,7 +3,7 @@
 # 
 # Copyleft (c) by Alexander Sibagatov 2020.
 # -------------------------------------------
-name: CICD-AWS-pipeline-s3-elasticbeanstalk
+name: cicd-aws-pipeline-s3-elasticbeanstalk
 env:
   EB_PACKAGE_S3_BUCKET_NAME : "sibalex-flask-application-packages"
   EB_APPLICATION_NAME       : "MyFlask"
